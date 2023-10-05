@@ -1,20 +1,21 @@
+"use client"
 import Image from 'next/image'
-import Navbar from "./component/Navbar"
+
 import Hero from "./component/Hero"
 import Course from './component/Course'
+import Review from './component/Review'
+import Faq from './component/Faq'
+import Footer from './component/Footer'
 export default function Home() {
   return (
     <main>
-       <Navbar />
+    
      <Hero /> 
-     <Course
-          title="Course Title 1"
-          rating={4.5}
-          price={49.99}
-          numLectures={35}
-          numStudents={2500}
-          imageUrl="https://example.com/image1.jpg"
-        />
+     <Course />
+     <Review />  
+
+     <Faq />
+   
     </main>
   )
 }
